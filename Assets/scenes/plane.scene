@@ -298,6 +298,243 @@
         }
       ],
       "Children": []
+    },
+    {
+      "__guid": "eacf081a-811b-4b16-858f-0af07a9bc87c",
+      "__version": 2,
+      "__Prefab": "gem.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "7f3bc952-9b72-4a61-b7f4-4dfcb7800264"
+            },
+            "Property": "Position",
+            "Value": "224,0,64"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "fe4efd51-9bdb-4fad-9ab0-1d45847e7971"
+            },
+            "Property": "OnTriggerEnter",
+            "Value": {
+              "__version": 9,
+              "__guid": "d1532896-4e69-48c1-8ee5-e3e01853841e",
+              "__changeId": 19,
+              "UserData": {
+                "Title": "On Collider Enter",
+                "ReferencedComponentTypes": []
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 7,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": true,
+                    "_name": "AddScore",
+                    "_type": "GameState"
+                  },
+                  "UserData": {
+                    "Position": "168,36"
+                  }
+                },
+                {
+                  "Id": 12,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "Destroy",
+                    "_type": "Sandbox.GameObject"
+                  },
+                  "UserData": {
+                    "Position": "348,36"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 7,
+                  "DstName": "_signal"
+                },
+                {
+                  "Id": 13,
+                  "Value": 1,
+                  "DstId": 7,
+                  "DstName": "amount"
+                },
+                {
+                  "SrcId": 7,
+                  "SrcName": "_signal",
+                  "DstId": 12,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_target",
+                  "DstId": 12,
+                  "DstName": "_target"
+                }
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "7f3bc952-9b72-4a61-b7f4-4dfcb7800264": "eacf081a-811b-4b16-858f-0af07a9bc87c",
+        "29352ecd-263d-4205-83a1-d2b2c6a55662": "ecd0e837-0894-480d-8ba6-39960731d337",
+        "fe4efd51-9bdb-4fad-9ab0-1d45847e7971": "280db036-fb82-4dbd-b642-b249362d5b78",
+        "b6ace2ca-4125-4148-af4d-dc23ac6e91dd": "7c040ea8-1ab8-443d-8620-b90c01c26cd1"
+      }
+    },
+    {
+      "__guid": "f487c36b-d67d-4ce4-be02-d22ea67cfc14",
+      "__version": 2,
+      "__Prefab": "gem.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "7f3bc952-9b72-4a61-b7f4-4dfcb7800264"
+            },
+            "Property": "Name",
+            "Value": "Gem (1)"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "7f3bc952-9b72-4a61-b7f4-4dfcb7800264"
+            },
+            "Property": "Position",
+            "Value": "224,128,64"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "fe4efd51-9bdb-4fad-9ab0-1d45847e7971"
+            },
+            "Property": "OnTriggerEnter",
+            "Value": {
+              "__version": 9,
+              "__guid": "9f43939f-a22c-4ee9-8579-e10cb7b99532",
+              "__changeId": 19,
+              "UserData": {
+                "Title": "On Collider Enter",
+                "ReferencedComponentTypes": []
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 7,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": true,
+                    "_name": "AddScore",
+                    "_type": "GameState"
+                  },
+                  "UserData": {
+                    "Position": "168,36"
+                  }
+                },
+                {
+                  "Id": 12,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "Destroy",
+                    "_type": "Sandbox.GameObject"
+                  },
+                  "UserData": {
+                    "Position": "348,36"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 7,
+                  "DstName": "_signal"
+                },
+                {
+                  "Id": 13,
+                  "Value": 1,
+                  "DstId": 7,
+                  "DstName": "amount"
+                },
+                {
+                  "SrcId": 7,
+                  "SrcName": "_signal",
+                  "DstId": 12,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_target",
+                  "DstId": 12,
+                  "DstName": "_target"
+                }
+              ]
+            }
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "7f3bc952-9b72-4a61-b7f4-4dfcb7800264": "f487c36b-d67d-4ce4-be02-d22ea67cfc14",
+        "29352ecd-263d-4205-83a1-d2b2c6a55662": "0742f4e4-6301-4b1a-ae7b-16ef1213c4f3",
+        "fe4efd51-9bdb-4fad-9ab0-1d45847e7971": "0a5addec-e02b-415d-8ec2-2d65b4ea91e9",
+        "b6ace2ca-4125-4148-af4d-dc23ac6e91dd": "f613b97d-f996-4b60-9cce-ef0cdef7e3ca"
+      }
+    },
+    {
+      "__guid": "c98f693b-9747-41ec-a278-c5a26a2c68f9",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Game State",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "GameState",
+          "__guid": "1301b425-772d-4506-9bd5-f24381b28e8f",
+          "__enabled": true,
+          "Flags": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
